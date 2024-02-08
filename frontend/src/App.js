@@ -1,10 +1,8 @@
-
 import './App.css';
 import {Routes,Route} from 'react-router-dom'
-import Crearusuario from './components/Crearusuario.js'
-import Listausuario from './components/Listausuario.js'
-import Navegacion from './components/navegacion.js'
-
+import { Listausuario } from './components/Listausuario';
+import { Crearusuario } from './components/Crearusuario';
+import { Navegacion } from './components/Navegacion';
 
 function App() {
   return (
