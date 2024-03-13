@@ -14,7 +14,7 @@ app.use(express.json());
 
 //rutas
 app.get('/',(req,res)=>{
-    res.send("ola");
+    res.send('Ola');
 })
 
 //ruta para api

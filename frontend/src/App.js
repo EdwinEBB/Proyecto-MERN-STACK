@@ -7,12 +7,12 @@ import { Navegacion } from './components/Navegacion';
 function App() {
   return (
     <div className="">
-      <Navegacion/>
-      <div className='contauner p-4'>
+      <Navegacion />
+      <div className="contauner p-4">
         <Routes>
-          <Route path="/" element={<Listausuario/>}/>
-          <Route path="/crearusuario" element={<Crearusuario/>}/>
-          <Route path="/edit:id" element={<Crearusuario/>}/>
+          <Route path="/" element={<Listausuario />} />
+          <Route path="/crearusuario" element={<Crearusuario />} />
+          <Route path="/edit/:id" element={<Crearusuario />} />
         </Routes>
       </div>
     </div>

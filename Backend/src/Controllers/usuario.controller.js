@@ -6,18 +6,20 @@ usuarioctrl.getuser= async(req,res)=>{
     res.json(usuarios);
 }
 
-usuarioctrl.crearuser= async(req,res)=>{
-    const {nombre,apellido,edad,correo,telefono}=req.body;
-    const newuser=new usuario({
-        nombre:nombre,
-        apellido:apellido,
-        correo:correo,
-        telefono:telefono,
-        edad:edad
-    })
-    await newuser.save();
-    res.json({message:'usuario guardado'});
-}
+usuarioctrl.crearuser = async (req, res) => {
+  const { nombre, apellido, edad, correo, telefono } = req.body;
+  const newuser = new usuario({
+    nombre: nombre,
+    apellido: apellido,
+    correo: correo,
+    telefono: telefono,
+    edad: edad,
+  });
+  await newuser.save();
+  res.json({ message: "usuario guardado" });
+};
+
+
 
 usuarioctrl.getuserx= async(req,res)=>{
     const usuario2= await usuario.findById(req.params.id);
